@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechGadget - Your One-Stop Electronics Shop</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="#">TechGadget</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#products">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#deals">Deals</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                </ul>
+                <div class="d-flex">
+                    <button class="btn btn-outline-light me-2" id="cartBtn">
+                        <i class="bi bi-cart"></i> Cart <span class="badge bg-danger" id="cartCount">0</span>
+                    </button>
+                    <button class="btn btn-light me-2" id="loginBtn">Login</button>
+                    <button class="btn btn-outline-light d-none" id="logoutBtn">
+                        <i class="bi bi-box-arrow-right"></i> Logout
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h1>Welcome to TechGadget</h1>
+                    <p class="lead">Your trusted source for the latest electronics and gadgets</p>
+                    <div class="cashback-badge">
+                        <i class="bi bi-cash-stack"></i> 4% Cashback on all purchases
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <img src="https://images.unsplash.com/photo-1498049794561-7780e7231661?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
+                         alt="Electronics" class="img-fluid rounded">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Featured Products -->
+    <section id="products" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Featured Products</h2>
+            <div class="row">
+                <div class="col-md-3 mb-4">
+                    <div class="card product-card" data-product-id="1">
+                        <div class="position-relative">
+                            <div class="product-image">
+                                <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1780&q=80" 
+                                     class="card-img-top" alt="Smartphone">
+                                <button class="btn btn-light position-absolute top-0 end-0 m-2 wishlist-btn" data-id="1">
+                                    <i class="bi bi-heart"></i>
+                                </button>
+                            </div>
+                            <div class="cart-quantity-badge">0</div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Smartphone Pro X</h5>
+                            <p class="card-text">Latest smartphone with advanced features</p>
+                            <div class="rating-container"></div>
+                            <div class="d-flex justify-content-between align-items-center mt-2">
+                                <span class="price">৳45,000</span>
+                                <button class="btn btn-primary add-to-cart" data-id="1">Add to Cart</button>
+                            </div>
+                            <div class="reviews-container"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="card product-card" data-product-id="2">
+                        <div class="position-relative">
+                            <div class="product-image">
+                                <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
+                                     class="card-img-top" alt="Headphones">
+                                <button class="btn btn-light position-absolute top-0 end-0 m-2 wishlist-btn" data-id="2">
+                                    <i class="bi bi-heart"></i>
+                                </button>
+                            </div>
+                            <div class="cart-quantity-badge">0</div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Wireless Headphones</h5>
+                            <p class="card-text">Premium sound quality with noise cancellation</p>
+                            <div class="rating-container"></div>
+                            <div class="d-flex justify-content-between align-items-center mt-2">
+                                <span class="price">৳12,000</span>
+                                <button class="btn btn-primary add-to-cart" data-id="2">Add to Cart</button>
+                            </div>
+                            <div class="reviews-container"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="card product-card" data-product-id="3">
+                        <div class="position-relative">
+                            <div class="product-image">
+                                <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
+                                     class="card-img-top" alt="Smart Watch">
+                                <button class="btn btn-light position-absolute top-0 end-0 m-2 wishlist-btn" data-id="3">
+                                    <i class="bi bi-heart"></i>
+                                </button>
+                            </div>
+                            <div class="cart-quantity-badge">0</div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Smart Watch</h5>
+                            <p class="card-text">Track your fitness and stay connected</p>
+                            <div class="rating-container"></div>
+                            <div class="d-flex justify-content-between align-items-center mt-2">
+                                <span class="price">৳15,000</span>
+                                <button class="btn btn-primary add-to-cart" data-id="3">Add to Cart</button>
+                            </div>
+                            <div class="reviews-container"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="card product-card" data-product-id="4">
+                        <div class="position-relative">
+                            <div class="product-image">
+                                <img src="https://images.unsplash.com/photo-1546868871-7041f2a55e12?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" 
+                                     class="card-img-top" alt="Tablet">
+                                <button class="btn btn-light position-absolute top-0 end-0 m-2 wishlist-btn" data-id="4">
+                                    <i class="bi bi-heart"></i>
+                                </button>
+                            </div>
+                            <div class="cart-quantity-badge">0</div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Tablet Pro</h5>
+                            <p class="card-text">Perfect for work and entertainment</p>
+                            <div class="rating-container"></div>
+                            <div class="d-flex justify-content-between align-items-center mt-2">
+                                <span class="price">৳35,000</span>
+                                <button class="btn btn-primary add-to-cart" data-id="4">Add to Cart</button>
+                            </div>
+                            <div class="reviews-container"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Special Deals -->
+    <section id="deals" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Special Deals</h2>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="deal-card">
+                        <div class="deal-content">
+                            <h3>Flash Sale!</h3>
+                            <p>Up to 30% off on all smartphones</p>
+                            <button class="btn btn-danger">Shop Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="deal-card">
+                        <div class="deal-content">
+                            <h3>Weekend Special</h3>
+                            <p>Extra 5% cashback on electronics</p>
+                            <button class="btn btn-danger">Shop Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">About TechGadget</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <p>TechGadget is your one-stop destination for all your electronic needs. We offer a wide range of products from smartphones to accessories, all at competitive prices.</p>
+                    <p>With our partnership with TakaBack, you can earn cashback on every purchase!</p>
+                </div>
+                <div class="col-md-6">
+                    <div class="features">
+                        <div class="feature-item">
+                            <i class="bi bi-shield-check"></i>
+                            <span>Secure Shopping</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="bi bi-truck"></i>
+                            <span>Fast Delivery</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="bi bi-headset"></i>
+                            <span>24/7 Support</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>TechGadget</h5>
+                    <p>Your trusted source for electronics</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-light">Home</a></li>
+                        <li><a href="#products" class="text-light">Products</a></li>
+                        <li><a href="#deals" class="text-light">Deals</a></li>
+                        <li><a href="#about" class="text-light">About</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Contact Us</h5>
+                    <p>Email: support@techgadget.com</p>
+                    <p>Phone: +880 1234-567890</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cart Modal -->
+    <div class="modal fade" id="cartModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Shopping Cart</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div id="cartItems"></div>
+                    <div class="text-end mt-3">
+                        <h5>Total: ৳<span id="cartTotal">0</span></h5>
+                        <h6>Cashback (4%): ৳<span id="cartCashback">0</span></h6>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Continue Shopping</button>
+                    <button type="button" class="btn btn-primary" id="checkoutBtn">Proceed to Checkout</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Login Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Login</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="loginForm">
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="password" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Login</button>
+                    </form>
+                    <div class="text-center mt-3">
+                        <p>Don't have an account? <a href="#" id="showRegister">Register</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Register Modal -->
+    <div class="modal fade" id="registerModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Register</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="registerForm">
+                        <div class="mb-3">
+                            <label for="registerName" class="form-label">Full Name</label>
+                            <input type="text" class="form-control" id="registerName" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="registerEmail" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="registerEmail" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="registerPassword" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="registerPassword" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="confirmPassword" class="form-label">Confirm Password</label>
+                            <input type="password" class="form-control" id="confirmPassword" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Register</button>
+                    </form>
+                    <div class="text-center mt-3">
+                        <p>Already have an account? <a href="#" id="showLogin">Login</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Profile Modal -->
+    <div class="modal fade" id="profileModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">My Profile</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card">
+                                <div class="card-body text-center">
+                                    <img src="https://via.placeholder.com/150" class="rounded-circle mb-3" alt="Profile">
+                                    <h5 id="profileName">User Name</h5>
+                                    <p id="profileEmail">user@example.com</p>
+                                    <div class="cashback-summary">
+                                        <h6>Total Cashback Earned</h6>
+                                        <h4 class="text-success" id="totalCashback">৳0</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <ul class="nav nav-tabs" id="profileTabs">
+                                <li class="nav-item">
+                                    <a class="nav-link active" data-bs-toggle="tab" href="#orders">Orders</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-bs-toggle="tab" href="#settings">Settings</a>
+                                </li>
+                            </ul>
+                            <div class="tab-content mt-3">
+                                <div class="tab-pane fade show active" id="orders">
+                                    <div id="ordersList"></div>
+                                </div>
+                                <div class="tab-pane fade" id="settings">
+                                    <form id="profileForm">
+                                        <div class="mb-3">
+                                            <label class="form-label">Full Name</label>
+                                            <input type="text" class="form-control" id="editName">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label class="form-label">Email</label>
+                                            <input type="email" class="form-control" id="editEmail">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label class="form-label">Phone</label>
+                                            <input type="tel" class="form-control" id="editPhone">
+                                        </div>
+                                        <button type="submit" class="btn btn-primary">Save Changes</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Review Modal -->
+    <div class="modal fade" id="reviewModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Add Review</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- Review form will be dynamically inserted here -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 

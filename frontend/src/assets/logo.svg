@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background Circle -->
+    <circle cx="100" cy="100" r="90" fill="#1976D2" opacity="0.1"/>
+    
+    <!-- Taka Symbol -->
+    <path d="M100 40 L100 160 M70 70 L130 70 M70 100 L130 100" 
+          stroke="#1976D2" 
+          stroke-width="12" 
+          stroke-linecap="round" 
+          stroke-linejoin="round"/>
+    
+    <!-- B Letter -->
+    <path d="M70 130 C70 130 85 130 100 130 C115 130 130 130 130 130 C130 130 130 145 130 145 C130 145 115 145 100 145 C85 145 70 145 70 145" 
+          stroke="#1976D2" 
+          stroke-width="12" 
+          stroke-linecap="round" 
+          stroke-linejoin="round"/>
+    
+    <!-- Cashback Arrow -->
+    <path d="M60 140 L100 100 L140 140" 
+          stroke="#4CAF50" 
+          stroke-width="8" 
+          stroke-linecap="round" 
+          stroke-linejoin="round"/>
+    
+    <!-- Text -->
+    <text x="100" y="180" 
+          font-family="Arial, sans-serif" 
+          font-size="24" 
+          font-weight="bold" 
+          fill="#1976D2" 
+          text-anchor="middle">
+        TakaBack
+    </text>
+</svg> 
