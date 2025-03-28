@@ -1,0 +1,33 @@
+# Mark build output and dependencies as vendored
+build/* linguist-vendored
+dist/* linguist-vendored
+node_modules/* linguist-vendored
+
+# Mark test files as vendored
+__tests__/* linguist-vendored
+*.test.* linguist-vendored
+*.spec.* linguist-vendored
+
+# Mark configuration files as vendored
+*.config.* linguist-vendored
+*.conf linguist-vendored
+
+# Mark documentation as vendored
+docs/* linguist-vendored
+*.md linguist-vendored
+
+# Ensure TypeScript and JavaScript files are counted
+*.ts linguist-detectable=true
+*.tsx linguist-detectable=true
+*.js linguist-detectable=true
+*.jsx linguist-detectable=true
+
+# Mark other file types as not detectable
+*.css linguist-detectable=false
+*.scss linguist-detectable=false
+*.sass linguist-detectable=false
+*.less linguist-detectable=false
+*.json linguist-detectable=false
+*.yml linguist-detectable=false
+*.yaml linguist-detectable=false
+*.html linguist-detectable=false 
