@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # TakaBack Cashback Platform
 
 A full-featured cashback and affiliate platform allowing users to earn cashback from online shopping and retailers to promote their stores through sponsored listings.
@@ -71,6 +70,3 @@ TakaBack/
 ## License
 
 This project is licensed under the MIT License - see the LICENSE file for details. 
-=======
-# TakaBack
->>>>>>> ff828281562410722b7ab43d35973542f777ee78
